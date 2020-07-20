@@ -19,7 +19,7 @@
             $this->altura=$al;
         }
         public function area(){
-            $area = ($this->base)*($this->altura);
+            $area = (($this->base)*($this->altura));/2
             return $area;
         }
         public function imprime(){
