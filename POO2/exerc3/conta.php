@@ -1,6 +1,6 @@
-<?php 
+<?php
     class conta{
-        
+
         private $saldo;
         private $data;
         public function _construct($argSaldo=0, $argData=0){
@@ -15,26 +15,26 @@
         }
         public function getSaldo(){
             return $this->saldo;
-            
+
         }
         public function setSaldo($s){
             $this->saldo=$s;
-            
+
         }
         public function saque($argS){
             if($argS>0){
                 echo "Você sacou: R$".$argS;
             }
-            
+
             $s2 = ($this->getSaldo())-($argS);
             $this->setSaldo($s2);
-            
+
         }
         public function deposito($argD){
             if($argD>0){
                 echo "</br>Você Depositou: R$".$argD;
             }
-           
+
             $d2 = ($this->getSaldo()+$argD);
             $this->setSaldo($d2);
         }
@@ -45,6 +45,6 @@
             $t2 =($this->getSaldo())-($argT);
             $this->setSaldo($t2);
          }
-        
+
 }
 ?>

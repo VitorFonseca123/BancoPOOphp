@@ -1,4 +1,4 @@
-<?php 
+<?php
     class triangulo{
         private $base;
         private $altura;
@@ -19,14 +19,14 @@
             $this->altura=$al;
         }
         public function area(){
-            $area = (($this->base)*($this->altura));/2
+            $area = (($this->base)*($this->altura)/2);
             return $area;
         }
         public function imprime(){
-            
+
             echo "Base: ".$this->base." </br>Altura: ".$this->altura;
             echo "</br>Area: ".$this-> area();
         }
     }
-    
+
 ?>
